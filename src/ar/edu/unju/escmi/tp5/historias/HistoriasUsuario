@@ -1,0 +1,36 @@
+Historias de Usuarios
+
+Título: Ingreso de usuario al sistema
+Descripción: 
+Como bibliotecario 
+Quiero registrar nuevos usuarios en la plataforma
+Para permitirles acceso a la biblioteca
+Condiciones de aceptación:
+Asignarle un rol al usuario e ingresar sus datos por consola. 
+
+
+Título: Préstamo de libro
+Descripción: 
+Como bibliotecario
+Quiero registrar el préstamo de un libro a un alumno
+Para llevar el control de los libros en la plataforma
+Condiciones de aceptación: 
+El bibliotecario deberá verificar el estado del libro, caso de no estar prestado progresará con el préstamo. 
+
+
+Título: Ingreso de nuevo libro 
+Descripción:
+Como bibliotecario
+Quiero ingresar un nuevo libro a la plataforma 
+Para que quede registrado para su préstamo
+Condiciones de aceptación:
+Deberá ingresar por consola los detalles del libro, como ser título, autor, etc. 
+
+
+Título: Devolución de libros
+Como bibliotecario
+Quiero registrar una devolución de libro
+Para cambiar el estado de un libro
+Condiciones de aceptación:
+El bibliotecario deberá cambiar por consola el estado del libro a que nuevamente se encuentra disponible, para los alumnos que deseen pedirlo prestado
+
