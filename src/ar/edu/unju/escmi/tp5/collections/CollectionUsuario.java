@@ -6,6 +6,7 @@ import java.util.List;
 import ar.edu.unju.escmi.tp5.dominio.Alumno;
 import ar.edu.unju.escmi.tp5.dominio.Bibliotecario;
 import ar.edu.unju.escmi.tp5.dominio.Usuario;
+import ar.edu.unju.escmi.tp5.exceptions.UsuarioNoRegistradoException;
 
 
 public class CollectionUsuario {
@@ -15,6 +16,14 @@ public class CollectionUsuario {
 		usuarios.add(usuario);
 	}
 
+	public static Usuario buscarUsuario(int id) throws UsuarioNoRegistradoException{
+		for (Usuario usuario : usuarios) {
+			if (usuario.getId() == id) {
+				return usuario;
+			}
+		}
+		throw new UsuarioNoRegistradoException("El usuario con codigo " + id + " no fue encontrado");
+	}
 	
     public static void precargarUsuarios() {
         Alumno alumno1 = new Alumno();
@@ -37,3 +46,4 @@ public class CollectionUsuario {
 
     }
 }
+
